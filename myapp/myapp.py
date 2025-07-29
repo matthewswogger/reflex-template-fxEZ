@@ -14,12 +14,4 @@ app.add_page(index)
 app.add_page(health)
 app.add_page(root, route="/api/")
 
-not_found_text = "The page you were looking for could not be found"
-
-app.add_custom_404_page(
-    title="404 - Page Not Found", 
-    description=not_found_text,
-    component=not_found(not_found_text)
-)
-
 app.compile()
