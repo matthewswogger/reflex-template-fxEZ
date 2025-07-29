@@ -13,5 +13,3 @@ app = rx.App()
 app.add_page(index)
 app.add_page(health)
 app.add_page(root, route="/api/")
-
-app.compile()
