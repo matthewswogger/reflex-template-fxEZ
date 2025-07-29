@@ -12,11 +12,7 @@ app = rx.App()
 
 app.add_page(index)
 app.add_page(health)
-
-app.api.add_api_route(
-    path="/",
-    endpoint=root
-)
+app.add_page(root, route="/api/")
 
 not_found_text = "The page you were looking for could not be found"
 
